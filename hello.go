@@ -23,7 +23,7 @@ num := 6
 	} else {
 		fmt.Println("Number is less than 6")
 }
-day := "monday"
+day := "wednesday"
 	switch day {
 	case "monday":
 		fmt.Println("Weekday")
