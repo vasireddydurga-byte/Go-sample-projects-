@@ -11,8 +11,30 @@ type address struct {
 	state    string
 	pin      int
 }
-
+type cube struct {
+	length float64
+	height float64
+	width float64
+}
+func(c cube) area() float64 {
+	return c.length *c.height*c.width
+}
 func main() {
+	CUB := cube{length: 4, height: 5, width: 6}
+	fmt.Println("area:",CUB.area())
+
+		cities := map[string]string {
+		"banglore": "greencity",
+		"jaipur": "pinkcity",	
+		}
+		cities["hyderabad"] = "HitechCity"
+				if val, ok := cities["redcity"]; ok{
+			fmt.Println("redcity  is present ", val)
+
+		}else { fmt.Println("redcity is not present")
+	
+				}
+
 	{
 		L := make([]int, 3)
 		L = append(L, 3)
