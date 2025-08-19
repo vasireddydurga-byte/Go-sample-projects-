@@ -13,8 +13,6 @@ type address struct {
 }
 
 func main() {{
-
-
 	L:= make([]int,3 )
 	L = append(L,3)
 	L= append(L,4)
@@ -22,12 +20,18 @@ func main() {{
 	L= append(L,6)
 	fmt.Println(len(L))
 	fmt.Println(cap(L))
+	fmt.Println(L)
 K :=[5] int{20,30,40,50, 60}
 slice := K[:4]
 fmt.Println(slice)
+arr := [5]int{1,2,3,4,5}
+
+	fmt.Println("Array value")
+	for i, v := range arr {
+		fmt.Println("Index", i, "Value", v)
+	}
 }
- 
-	D := address{
+ 	D := address{
 		address1: "paseo laguna ",
 		address2: "livermore",
 		state:    "california",
