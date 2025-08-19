@@ -12,26 +12,26 @@ type address struct {
 	pin      int
 }
 
-func main() {{
-	L:= make([]int,3 )
-	L = append(L,3)
-	L= append(L,4)
-	L = append(L,5)
-	L= append(L,6)
-	fmt.Println(len(L))
-	fmt.Println(cap(L))
-	fmt.Println(L)
-K :=[5] int{20,30,40,50, 60}
-slice := K[:4]
-fmt.Println(slice)
-arr := [5]int{1,2,3,4,5}
+func main() {
+	{
+		L := make([]int, 3)
+		L = append(L, 3)
+		L = append(L, 4)
+		L = append(L, 5)
+		L = append(L, 6)
+		fmt.Println(len(L))
+		fmt.Println(cap(L))
+		K := [5]int{20, 30, 40, 50, 60}
+		slice := K[:4]
+		fmt.Println(slice)
 
-	fmt.Println("Array value")
-	for i, v := range arr {
-		fmt.Println("Index", i, "Value", v)
+		arr := [5]int{1, 2, 3, 4, 5}
+		fmt.Println("Array value")
+		for i, v := range arr {
+			fmt.Println("Index", i, "Value", v)
+		}
 	}
-}
- 	D := address{
+	D := address{
 		address1: "paseo laguna ",
 		address2: "livermore",
 		state:    "california",
@@ -43,7 +43,7 @@ arr := [5]int{1,2,3,4,5}
 	fmt.Println(D.pin)
 	fmt.Println(D)
 
-fmt.Println("Hello World")
+	fmt.Println("Hello World")
 	a, b := 6, 4
 	fmt.Println(simplecalc.Add(a, b))
 	c, d := 10, 3
@@ -77,5 +77,3 @@ fmt.Println("Hello World")
 	}
 
 }
-
-
