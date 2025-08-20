@@ -5,7 +5,7 @@ import (
 	"myproject/simplecalc"
 )
 
-type address struct {
+type address struct {	
 	address1 string
 	address2 string
 	state    string
@@ -23,18 +23,23 @@ func main() {
 	CUB := cube{length: 4, height: 5, width: 6}
 	fmt.Println("area:",CUB.area())
 
-		cities := map[string]string {
-		"banglore": "greencity",
-		"jaipur": "pinkcity",	
-		}
-		cities["hyderabad"] = "HitechCity"
-				if val, ok := cities["redcity"]; ok{
+		{
+    cities := map[string]string{
+        "Banglore": "Greencity",
+        "Jaipur":   "Pinkcity",
+	}
+		
+			cities["hyderabad"] = "HitechCity"
+		fmt.Println("after adding new city:", cities)
+			if val, ok := cities["redcity"]; ok{
 			fmt.Println("redcity  is present ", val)
 
 		}else { fmt.Println("redcity is not present")
 	
 				}
-
+for key,value := range cities {
+	fmt.Println(key,value)
+}
 	{
 		L := make([]int, 3)
 		L = append(L, 3)
@@ -98,4 +103,5 @@ func main() {
 		fmt.Println(i)
 	}
 
+}
 }
